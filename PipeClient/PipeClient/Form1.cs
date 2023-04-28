@@ -63,7 +63,24 @@ namespace PipeClient
         private void btnPath_Click_1(object sender, EventArgs e)
         {
             openObject = 1;
+            folderBrowserDialog1 = new FolderBrowserDialog();
+            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            {
+                tbSend.Text = folderBrowserDialog1.SelectedPath;
+            }
+            viruses = 0;
+            listBox1.Items.Clear();
+            //button2.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            openObject = 1;
             this.openFileDialog1 = new OpenFileDialog();
+            openFileDialog1.ValidateNames = false;
+            openFileDialog1.CheckFileExists = false;
+            openFileDialog1.CheckPathExists = true;
+
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
@@ -71,7 +88,6 @@ namespace PipeClient
             }
             viruses = 0;
             listBox1.Items.Clear();
-            //button2.Show();
         }
 
         private void stopWatcher_Click(object sender, EventArgs e)
@@ -83,5 +99,7 @@ namespace PipeClient
         {
             this.pipeClient.SendMessage("command", "start_watcher");
         }
+
+        
     }
 }

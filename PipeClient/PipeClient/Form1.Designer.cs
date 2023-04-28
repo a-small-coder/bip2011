@@ -36,12 +36,13 @@ namespace PipeClient
             this.btnStart = new System.Windows.Forms.Button();
             this.lblPipeName = new System.Windows.Forms.Label();
             this.tbPipeName = new System.Windows.Forms.TextBox();
-            this.btnPath = new System.Windows.Forms.Button();
+            this.GetPathFolder = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.stopWatcher = new System.Windows.Forms.Button();
             this.startWatcher = new System.Windows.Forms.Button();
+            this.GetPathFile = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblReceived
@@ -71,7 +72,7 @@ namespace PipeClient
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(100, 28);
             this.btnSend.TabIndex = 13;
-            this.btnSend.Text = "Check Folder";
+            this.btnSend.Text = "Check";
             this.btnSend.UseVisualStyleBackColor = true;
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
@@ -124,16 +125,16 @@ namespace PipeClient
             this.tbPipeName.TabIndex = 8;
             this.tbPipeName.Text = "\\\\.\\pipe\\myNamedPipe";
             // 
-            // btnPath
+            // GetPathFolder
             // 
-            this.btnPath.Location = new System.Drawing.Point(168, 328);
-            this.btnPath.Margin = new System.Windows.Forms.Padding(4);
-            this.btnPath.Name = "btnPath";
-            this.btnPath.Size = new System.Drawing.Size(100, 28);
-            this.btnPath.TabIndex = 16;
-            this.btnPath.Text = "Path";
-            this.btnPath.UseVisualStyleBackColor = true;
-            this.btnPath.Click += new System.EventHandler(this.btnPath_Click_1);
+            this.GetPathFolder.Location = new System.Drawing.Point(141, 328);
+            this.GetPathFolder.Margin = new System.Windows.Forms.Padding(4);
+            this.GetPathFolder.Name = "GetPathFolder";
+            this.GetPathFolder.Size = new System.Drawing.Size(100, 28);
+            this.GetPathFolder.TabIndex = 16;
+            this.GetPathFolder.Text = "pick folder";
+            this.GetPathFolder.UseVisualStyleBackColor = true;
+            this.GetPathFolder.Click += new System.EventHandler(this.btnPath_Click_1);
             // 
             // listBox1
             // 
@@ -176,16 +177,28 @@ namespace PipeClient
             this.startWatcher.UseVisualStyleBackColor = true;
             this.startWatcher.Click += new System.EventHandler(this.startWatcher_Click);
             // 
+            // GetPathFile
+            // 
+            this.GetPathFile.Location = new System.Drawing.Point(19, 328);
+            this.GetPathFile.Margin = new System.Windows.Forms.Padding(4);
+            this.GetPathFile.Name = "GetPathFile";
+            this.GetPathFile.Size = new System.Drawing.Size(100, 28);
+            this.GetPathFile.TabIndex = 21;
+            this.GetPathFile.Text = "pick file";
+            this.GetPathFile.UseVisualStyleBackColor = true;
+            this.GetPathFile.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(631, 632);
+            this.Controls.Add(this.GetPathFile);
             this.Controls.Add(this.startWatcher);
             this.Controls.Add(this.stopWatcher);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.btnPath);
+            this.Controls.Add(this.GetPathFolder);
             this.Controls.Add(this.lblReceived);
             this.Controls.Add(this.tbReceived);
             this.Controls.Add(this.btnSend);
@@ -212,12 +225,13 @@ namespace PipeClient
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Label lblPipeName;
         private System.Windows.Forms.TextBox tbPipeName;
-        private System.Windows.Forms.Button btnPath;
+        private System.Windows.Forms.Button GetPathFolder;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.Button stopWatcher;
         private System.Windows.Forms.Button startWatcher;
+        private System.Windows.Forms.Button GetPathFile;
     }
 }
 

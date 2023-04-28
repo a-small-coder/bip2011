@@ -129,6 +129,8 @@ namespace PipeServer
             {
                 if (directory.Split('.').Length == 1)
                 {
+                    SendMessage("scan directory");
+                    SendMessage(directory);
                     foreach (string file in Directory.GetFiles(directory, searchPattern))
                     {
                         SendMessage(file);
@@ -148,14 +150,11 @@ namespace PipeServer
 
                         }
 
-
-
                     }
 
                     foreach (string subDir in Directory.GetDirectories(directory))
                     {
                         count_scaning_file++;
-
                         FindFiles(subDir, searchPattern, tree, SendMessage);
 
                     }
