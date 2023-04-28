@@ -1,0 +1,44 @@
+C:\Users\Natalya\Desktop\C# client & server - named pipe\PipeServer\PipeServer\bin\Debug\PipeServer.exe.config
+C:\Users\Natalya\Desktop\C# client & server - named pipe\PipeServer\PipeServer\bin\Debug\PipeServer.exe
+C:\Users\Natalya\Desktop\C# client & server - named pipe\PipeServer\PipeServer\bin\Debug\PipeServer.pdb
+C:\Users\Natalya\Desktop\C# client & server - named pipe\PipeServer\PipeServer\obj\Debug\PipeServer.Form1.resources
+C:\Users\Natalya\Desktop\C# client & server - named pipe\PipeServer\PipeServer\obj\Debug\PipeServer.Properties.Resources.resources
+C:\Users\Natalya\Desktop\C# client & server - named pipe\PipeServer\PipeServer\obj\Debug\PipeServer.csproj.GenerateResource.cache
+C:\Users\Natalya\Desktop\C# client & server - named pipe\PipeServer\PipeServer\obj\Debug\PipeServer.csproj.CoreCompileInputs.cache
+C:\Users\Natalya\Desktop\C# client & server - named pipe\PipeServer\PipeServer\obj\Debug\PipeServer.exe
+C:\Users\Natalya\Desktop\C# client & server - named pipe\PipeServer\PipeServer\obj\Debug\PipeServer.pdb
+C:\Users\Natalya\Desktop\C# client & server - named pipe\PipeServer\PipeServer\obj\Debug\PipeServer.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\C# client & server - named pipe (2)\C# client & server - named pipe\PipeServer\PipeServer\bin\Debug\PipeServer.exe.config
+C:\Users\Lenovo\Desktop\C# client & server - named pipe (2)\C# client & server - named pipe\PipeServer\PipeServer\bin\Debug\PipeServer.exe
+C:\Users\Lenovo\Desktop\C# client & server - named pipe (2)\C# client & server - named pipe\PipeServer\PipeServer\bin\Debug\PipeServer.pdb
+C:\Users\Lenovo\Desktop\C# client & server - named pipe (2)\C# client & server - named pipe\PipeServer\PipeServer\obj\Debug\PipeServer.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\C# client & server - named pipe (2)\C# client & server - named pipe\PipeServer\PipeServer\obj\Debug\PipeServer.csproj.SuggestedBindingRedirects.cache
+C:\Users\Lenovo\Desktop\C# client & server - named pipe (2)\C# client & server - named pipe\PipeServer\PipeServer\obj\Debug\PipeServer.Form1.resources
+C:\Users\Lenovo\Desktop\C# client & server - named pipe (2)\C# client & server - named pipe\PipeServer\PipeServer\obj\Debug\PipeServer.Properties.Resources.resources
+C:\Users\Lenovo\Desktop\C# client & server - named pipe (2)\C# client & server - named pipe\PipeServer\PipeServer\obj\Debug\PipeServer.csproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\C# client & server - named pipe (2)\C# client & server - named pipe\PipeServer\PipeServer\obj\Debug\PipeServer.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\C# client & server - named pipe (2)\C# client & server - named pipe\PipeServer\PipeServer\obj\Debug\PipeServer.exe
+C:\Users\Lenovo\Desktop\C# client & server - named pipe (2)\C# client & server - named pipe\PipeServer\PipeServer\obj\Debug\PipeServer.pdb
+C:\Users\Natalya\Downloads\antivirus-main (1)\antivirus-main\PipeServer\bin\Debug\PipeServer.exe.config
+C:\Users\Natalya\Downloads\antivirus-main (1)\antivirus-main\PipeServer\bin\Debug\PipeServer.exe
+C:\Users\Natalya\Downloads\antivirus-main (1)\antivirus-main\PipeServer\bin\Debug\PipeServer.pdb
+C:\Users\Natalya\Downloads\antivirus-main (1)\antivirus-main\PipeServer\bin\Debug\System.IO.Compression.dll
+C:\Users\Natalya\Downloads\antivirus-main (1)\antivirus-main\PipeServer\obj\Debug\PipeServer.csproj.AssemblyReference.cache
+C:\Users\Natalya\Downloads\antivirus-main (1)\antivirus-main\PipeServer\obj\Debug\PipeServer.Form1.resources
+C:\Users\Natalya\Downloads\antivirus-main (1)\antivirus-main\PipeServer\obj\Debug\PipeServer.Properties.Resources.resources
+C:\Users\Natalya\Downloads\antivirus-main (1)\antivirus-main\PipeServer\obj\Debug\PipeServer.csproj.GenerateResource.cache
+C:\Users\Natalya\Downloads\antivirus-main (1)\antivirus-main\PipeServer\obj\Debug\PipeServer.csproj.CoreCompileInputs.cache
+C:\Users\Natalya\Downloads\antivirus-main (1)\antivirus-main\PipeServer\obj\Debug\PipeServer.csproj.CopyComplete
+C:\Users\Natalya\Downloads\antivirus-main (1)\antivirus-main\PipeServer\obj\Debug\PipeServer.exe
+C:\Users\Natalya\Downloads\antivirus-main (1)\antivirus-main\PipeServer\obj\Debug\PipeServer.pdb
+C:\Users\hulkt\OneDrive\Документы\antivirus\antivirus-wat\antivirus-main\PipeServer\bin\Debug\PipeServer.exe.config
+C:\Users\hulkt\OneDrive\Документы\antivirus\antivirus-wat\antivirus-main\PipeServer\bin\Debug\PipeServer.exe
+C:\Users\hulkt\OneDrive\Документы\antivirus\antivirus-wat\antivirus-main\PipeServer\bin\Debug\PipeServer.pdb
+C:\Users\hulkt\OneDrive\Документы\antivirus\antivirus-wat\antivirus-main\PipeServer\obj\Debug\PipeServer.csproj.AssemblyReference.cache
+C:\Users\hulkt\OneDrive\Документы\antivirus\antivirus-wat\antivirus-main\PipeServer\obj\Debug\PipeServer.csproj.SuggestedBindingRedirects.cache
+C:\Users\hulkt\OneDrive\Документы\antivirus\antivirus-wat\antivirus-main\PipeServer\obj\Debug\PipeServer.Form1.resources
+C:\Users\hulkt\OneDrive\Документы\antivirus\antivirus-wat\antivirus-main\PipeServer\obj\Debug\PipeServer.Properties.Resources.resources
+C:\Users\hulkt\OneDrive\Документы\antivirus\antivirus-wat\antivirus-main\PipeServer\obj\Debug\PipeServer.csproj.GenerateResource.cache
+C:\Users\hulkt\OneDrive\Документы\antivirus\antivirus-wat\antivirus-main\PipeServer\obj\Debug\PipeServer.csproj.CoreCompileInputs.cache
+C:\Users\hulkt\OneDrive\Документы\antivirus\antivirus-wat\antivirus-main\PipeServer\obj\Debug\PipeServer.exe
+C:\Users\hulkt\OneDrive\Документы\antivirus\antivirus-wat\antivirus-main\PipeServer\obj\Debug\PipeServer.pdb
