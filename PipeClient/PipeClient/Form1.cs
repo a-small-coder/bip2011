@@ -63,8 +63,12 @@ namespace PipeClient
         private void btnPath_Click_1(object sender, EventArgs e)
         {
             openObject = 1;
-            folderBrowserDialog1.ShowDialog();
-            tbSend.Text = folderBrowserDialog1.SelectedPath;
+            this.openFileDialog1 = new OpenFileDialog();
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                tbSend.Text = openFileDialog1.FileName;
+            }
             viruses = 0;
             listBox1.Items.Clear();
             //button2.Show();

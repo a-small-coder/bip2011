@@ -19,3 +19,14 @@ C:\Users\Lenovo\Desktop\C# client & server - named pipe (2)\C# client & server -
 C:\Users\Lenovo\Desktop\C# client & server - named pipe (2)\C# client & server - named pipe\PipeClient\PipeClient\obj\Debug\PipeClient.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\Desktop\C# client & server - named pipe (2)\C# client & server - named pipe\PipeClient\PipeClient\obj\Debug\PipeClient.exe
 C:\Users\Lenovo\Desktop\C# client & server - named pipe (2)\C# client & server - named pipe\PipeClient\PipeClient\obj\Debug\PipeClient.pdb
+C:\Users\hulkt\OneDrive\Документы\antivirus\PipeClient\PipeClient\bin\Debug\PipeClient.exe.config
+C:\Users\hulkt\OneDrive\Документы\antivirus\PipeClient\PipeClient\bin\Debug\PipeClient.exe
+C:\Users\hulkt\OneDrive\Документы\antivirus\PipeClient\PipeClient\bin\Debug\PipeClient.pdb
+C:\Users\hulkt\OneDrive\Документы\antivirus\PipeClient\PipeClient\obj\Debug\PipeClient.csproj.AssemblyReference.cache
+C:\Users\hulkt\OneDrive\Документы\antivirus\PipeClient\PipeClient\obj\Debug\PipeClient.csproj.SuggestedBindingRedirects.cache
+C:\Users\hulkt\OneDrive\Документы\antivirus\PipeClient\PipeClient\obj\Debug\PipeClient.Form1.resources
+C:\Users\hulkt\OneDrive\Документы\antivirus\PipeClient\PipeClient\obj\Debug\PipeClient.Properties.Resources.resources
+C:\Users\hulkt\OneDrive\Документы\antivirus\PipeClient\PipeClient\obj\Debug\PipeClient.csproj.GenerateResource.cache
+C:\Users\hulkt\OneDrive\Документы\antivirus\PipeClient\PipeClient\obj\Debug\PipeClient.csproj.CoreCompileInputs.cache
+C:\Users\hulkt\OneDrive\Документы\antivirus\PipeClient\PipeClient\obj\Debug\PipeClient.exe
+C:\Users\hulkt\OneDrive\Документы\antivirus\PipeClient\PipeClient\obj\Debug\PipeClient.pdb

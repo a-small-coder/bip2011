@@ -162,7 +162,7 @@ namespace PipeServer
                         string root_directory = path_command[0];// @"C:\Users\Lenovo\Desktop";
                         string search_pattern = "*.*";
 
-                        Signature.FindFiles(root_directory, search_pattern, tree);
+                        Signature.FindFiles(root_directory, search_pattern, tree, this.SendMessage);
                         /*
                         string[] search = Directory.GetFiles(path_command[0], "*.*", SearchOption.AllDirectories);
                         foreach (string item in search)
@@ -213,7 +213,7 @@ namespace PipeServer
         /// Sends a message to all connected clients
         /// </summary>
         /// <param name="message">the message to send</param>
-        public void SendMessage(string message)
+        public int SendMessage(string message)
         {
             lock (this.clients)
             {
@@ -225,6 +225,7 @@ namespace PipeServer
                     client.stream.Flush();
                 }
             }
+            return 1;
         }
 
 

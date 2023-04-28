@@ -92,7 +92,7 @@ namespace PipeServer
 
                 }
 
-                Signature.FindFiles(root_directory, search_pattern, tree);
+                Signature.FindFiles(root_directory, search_pattern, tree, Watcher.CasperSendMessage);
                 if (viruses != 0)
                 {
                     Console.WriteLine("файл {0} заражен", e.FullPath);
@@ -117,6 +117,11 @@ namespace PipeServer
         {
             // Specify what is done when a file is renamed.
             Console.WriteLine("File: {0} renamed to {1}", e.OldFullPath, e.FullPath);
+        }
+
+        public static int CasperSendMessage(string message)
+        {
+            return 1;
         }
     }
 }

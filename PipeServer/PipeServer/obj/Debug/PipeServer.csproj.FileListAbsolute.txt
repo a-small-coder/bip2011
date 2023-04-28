@@ -42,3 +42,14 @@ C:\Users\hulkt\OneDrive\Документы\antivirus\antivirus-wat\antivirus-mai
 C:\Users\hulkt\OneDrive\Документы\antivirus\antivirus-wat\antivirus-main\PipeServer\obj\Debug\PipeServer.csproj.CoreCompileInputs.cache
 C:\Users\hulkt\OneDrive\Документы\antivirus\antivirus-wat\antivirus-main\PipeServer\obj\Debug\PipeServer.exe
 C:\Users\hulkt\OneDrive\Документы\antivirus\antivirus-wat\antivirus-main\PipeServer\obj\Debug\PipeServer.pdb
+C:\Users\hulkt\OneDrive\Документы\antivirus\PipeServer\PipeServer\obj\Debug\PipeServer.csproj.AssemblyReference.cache
+C:\Users\hulkt\OneDrive\Документы\antivirus\PipeServer\PipeServer\obj\Debug\PipeServer.csproj.SuggestedBindingRedirects.cache
+C:\Users\hulkt\OneDrive\Документы\antivirus\PipeServer\PipeServer\obj\Debug\PipeServer.Form1.resources
+C:\Users\hulkt\OneDrive\Документы\antivirus\PipeServer\PipeServer\obj\Debug\PipeServer.Properties.Resources.resources
+C:\Users\hulkt\OneDrive\Документы\antivirus\PipeServer\PipeServer\obj\Debug\PipeServer.csproj.GenerateResource.cache
+C:\Users\hulkt\OneDrive\Документы\antivirus\PipeServer\PipeServer\obj\Debug\PipeServer.csproj.CoreCompileInputs.cache
+C:\Users\hulkt\OneDrive\Документы\antivirus\PipeServer\PipeServer\obj\Debug\PipeServer.exe
+C:\Users\hulkt\OneDrive\Документы\antivirus\PipeServer\PipeServer\obj\Debug\PipeServer.pdb
+C:\Users\hulkt\OneDrive\Документы\antivirus\PipeServer\PipeServer\bin\Debug\PipeServer.exe.config
+C:\Users\hulkt\OneDrive\Документы\antivirus\PipeServer\PipeServer\bin\Debug\PipeServer.exe
+C:\Users\hulkt\OneDrive\Документы\antivirus\PipeServer\PipeServer\bin\Debug\PipeServer.pdb

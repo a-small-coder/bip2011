@@ -12,7 +12,7 @@ namespace PipeServer
 
     class Signature
     {
-        public static string signaturePath = "C:\\Users\\hulkt\\OneDrive\\Документы\\antivirus\\antivirus-wat\\antivirus-main\\PipeServer\\signature.txt";
+        public static string signaturePath = "C:\\Users\\hulkt\\OneDrive\\Документы\\antivirus\\PipeServer\\signature.txt";
 
         // считывает данные из файла с сигнатурами (signature.txt) и загружает каждую сигнатуру в дерево
         public static RBTree LoadSignatures(string fileName, RBTree tree)
@@ -122,45 +122,68 @@ namespace PipeServer
 
 
         // рекурсивно проходит по всем папкам и файлам, файлы отправляет в метод find_sign_in_file
-        public static void FindFiles(string directory, string searchPattern, RBTree tree)
+        public static void FindFiles(string directory, string searchPattern, RBTree tree, Func<string, int> SendMessage)
         {
             int count_scaning_file = 0;
             try
             {
-
-                foreach (string file in Directory.GetFiles(directory, searchPattern))
+                if (directory.Split('.').Length == 1)
                 {
-                    FileInfo size = new FileInfo(file);
-                    //если попавшийся файл - архив
+                    foreach (string file in Directory.GetFiles(directory, searchPattern))
+                    {
+                        SendMessage(file);
+                        FileInfo size = new FileInfo(file);
+                        //если попавшийся файл - архив
+                        if (size.Name.Contains(".zip"))
+                        {
+                            count_scaning_file++;
+                            Signature.SearchArchive(file, tree);
+
+                        }
+                        if (size.Length < 200000000)
+                        {
+                            count_scaning_file++;
+
+                            Signature.find_sign_in_file(file, tree);
+
+                        }
+
+
+
+                    }
+
+                    foreach (string subDir in Directory.GetDirectories(directory))
+                    {
+                        count_scaning_file++;
+
+                        FindFiles(subDir, searchPattern, tree, SendMessage);
+
+                    }
+                }
+                else
+                {
+                    SendMessage("scan current file");
+                    SendMessage(directory);
+                    FileInfo size = new FileInfo(directory);
                     if (size.Name.Contains(".zip"))
                     {
                         count_scaning_file++;
-                        Signature.SearchArchive(file, tree);
+                        Signature.SearchArchive(directory, tree);
 
                     }
                     if (size.Length < 200000000)
                     {
                         count_scaning_file++;
 
-                        Signature.find_sign_in_file(file, tree);
+                        Signature.find_sign_in_file(directory, tree);
 
                     }
-
-
-
                 }
-
-                foreach (string subDir in Directory.GetDirectories(directory))
-                {
-                    count_scaning_file++;
-
-                    FindFiles(subDir, searchPattern, tree);
-
-                }
+                
 
 
             }
-            catch (UnauthorizedAccessException)
+            catch 
             {
                 // если нет доступа к директории, то пропустить ее
             }

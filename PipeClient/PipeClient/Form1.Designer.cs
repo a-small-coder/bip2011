@@ -50,7 +50,7 @@ namespace PipeClient
             this.lblReceived.Location = new System.Drawing.Point(16, 362);
             this.lblReceived.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblReceived.Name = "lblReceived";
-            this.lblReceived.Size = new System.Drawing.Size(139, 17);
+            this.lblReceived.Size = new System.Drawing.Size(136, 16);
             this.lblReceived.TabIndex = 15;
             this.lblReceived.Text = "Received Messages:";
             // 
@@ -81,7 +81,7 @@ namespace PipeClient
             this.lblSend.Location = new System.Drawing.Point(10, 184);
             this.lblSend.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSend.Name = "lblSend";
-            this.lblSend.Size = new System.Drawing.Size(106, 17);
+            this.lblSend.Size = new System.Drawing.Size(102, 16);
             this.lblSend.TabIndex = 12;
             this.lblSend.Text = "Send Message:";
             // 
@@ -111,7 +111,7 @@ namespace PipeClient
             this.lblPipeName.Location = new System.Drawing.Point(16, 11);
             this.lblPipeName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPipeName.Name = "lblPipeName";
-            this.lblPipeName.Size = new System.Drawing.Size(81, 17);
+            this.lblPipeName.Size = new System.Drawing.Size(78, 16);
             this.lblPipeName.TabIndex = 9;
             this.lblPipeName.Text = "Pipe Name:";
             // 
@@ -150,7 +150,7 @@ namespace PipeClient
             this.label3.Location = new System.Drawing.Point(16, 551);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 17);
+            this.label3.Size = new System.Drawing.Size(101, 16);
             this.label3.TabIndex = 18;
             this.label3.Text = "Selected folder:";
             // 
