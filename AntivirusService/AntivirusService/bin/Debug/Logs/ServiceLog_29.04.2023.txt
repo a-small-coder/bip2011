@@ -1,0 +1,6 @@
+Service is stopped at 29.04.2023 11:02:43
+Server is running.
+Service is stopped at 29.04.2023 13:07:28
+Server is running.
+Service is stopped at 29.04.2023 13:08:51
+Server is running.

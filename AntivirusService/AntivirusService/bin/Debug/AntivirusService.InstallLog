@@ -1,0 +1,91 @@
+﻿Выполняется установка сборки 'C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.InstallLog
+   assemblypath = C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe
+Устанавливается служба Service1...
+Служба Service1 успешно установлена.
+Создается исходный EventLog Service1 в журнале Application...
+Выполняется фиксация сборки 'C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.InstallLog
+   assemblypath = C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe
+Выполняется установка сборки 'C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.InstallLog
+   assemblypath = C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe
+Устанавливается служба Antivirus.BDLS...
+Служба Antivirus.BDLS успешно установлена.
+Создается исходный EventLog Antivirus.BDLS в журнале Application...
+Выполняется фиксация сборки 'C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.InstallLog
+   assemblypath = C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe
+Выполняется установка сборки 'C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.InstallLog
+   assemblypath = C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe
+Устанавливается служба Antivirus.BDLS...
+Создается исходный EventLog Antivirus.BDLS в журнале Application...
+Выполняется откат для сборки 'C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.InstallLog
+   assemblypath = C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe
+Восстанавливается исходное состояние журнала событий для источника Antivirus.BDLS.
+Выполняется установка сборки 'C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.InstallLog
+   assemblypath = C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe
+Устанавливается служба Antivirus.BDLS...
+Создается исходный EventLog Antivirus.BDLS в журнале Application...
+Выполняется откат для сборки 'C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.InstallLog
+   assemblypath = C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe
+Восстанавливается исходное состояние журнала событий для источника Antivirus.BDLS.
+Выполняется установка сборки 'C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.InstallLog
+   assemblypath = C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe
+Устанавливается служба Antivirus.BDLS...
+Служба Antivirus.BDLS успешно установлена.
+Создается исходный EventLog Antivirus.BDLS в журнале Application...
+Выполняется фиксация сборки 'C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.InstallLog
+   assemblypath = C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe
+Выполняется установка сборки 'C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.InstallLog
+   assemblypath = C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe
+Устанавливается служба Antivirus.BDLS...
+Служба Antivirus.BDLS успешно установлена.
+Создается исходный EventLog Antivirus.BDLS в журнале Application...
+Выполняется фиксация сборки 'C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.InstallLog
+   assemblypath = C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe
+Выполняется установка сборки 'C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.InstallLog
+   assemblypath = C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe
+Устанавливается служба Antivirus.BDLS...
+Служба Antivirus.BDLS успешно установлена.
+Создается исходный EventLog Antivirus.BDLS в журнале Application...
+Выполняется фиксация сборки 'C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.InstallLog
+   assemblypath = C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe

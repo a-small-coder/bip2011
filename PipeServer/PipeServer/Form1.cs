@@ -50,5 +50,15 @@ namespace PipeServer
         {
             this.pipeServer.SendMessage(this.tbSend.Text);
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbPipeName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -27,6 +27,8 @@ namespace PipeClient
 
         public delegate void MessageReceivedHandler(string message);
         public event MessageReceivedHandler MessageReceived;
+        public delegate void UpdateListBoxHandler();
+        public event UpdateListBoxHandler UpdateListBox;
 
         public const int BUFFER_SIZE = 4096;
 

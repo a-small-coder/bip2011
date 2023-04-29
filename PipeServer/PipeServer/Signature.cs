@@ -13,6 +13,12 @@ namespace PipeServer
     class Signature
     {
         public static string signaturePath = "C:\\Users\\hulkt\\OneDrive\\Документы\\antivirus\\PipeServer\\signature.txt";
+        public static string QuarantinePath = "C:\\Quarantine";
+        public static string RecoverPath = "C:\\Recover";
+
+        public static int numScanFiles;
+        public static List<string> virusFiles = new List<string> { };
+        public static int VirusCount;
 
         // считывает данные из файла с сигнатурами (signature.txt) и загружает каждую сигнатуру в дерево
         public static RBTree LoadSignatures(string fileName, RBTree tree)
@@ -38,6 +44,13 @@ namespace PipeServer
             return tree;
         }
         // преобразовывает строки из файла с сигнатурами в масисв байтов
+
+        public static void clearScanResults()
+        {
+            numScanFiles = 0;
+            virusFiles = new List<string> { };
+            VirusCount = 0;
+    } 
         static byte[] StringToByteArray(string hex)
         {
             hex = hex.Replace(" ", "").Replace("-", "");
@@ -52,7 +65,6 @@ namespace PipeServer
         public static byte[] file_to_bin(string filename)
         {
 
-
             byte[] bin_data = File.ReadAllBytes(filename);
 
             return bin_data;
@@ -61,6 +73,7 @@ namespace PipeServer
         public static void find_sign_in_file(string file, RBTree tree)
         {
 
+            numScanFiles += 1;
             byte[] check_data = Signature.file_to_bin(file);
 
             Node node = tree.FindNode(check_data);
@@ -68,6 +81,7 @@ namespace PipeServer
             {
 
                 Console.WriteLine(file + "\n" + node.Name);
+                virusFiles.Add(file);
                 // перемещаем файо в карантин
                 MoveToQuarantine(file);
             }
@@ -104,6 +118,7 @@ namespace PipeServer
                             {
                                 is_virus_detected_in_archive = true;
                                 Console.WriteLine(entry + "\n" + node.Name);
+                                virusFiles.Add(entry.FullName);
                             }
                         }
                         //удаляем временный файл
@@ -129,22 +144,20 @@ namespace PipeServer
             {
                 if (directory.Split('.').Length == 1)
                 {
-                    SendMessage("scan directory");
-                    SendMessage(directory);
+                    SendMessage("scan directory  " + directory + Environment.NewLine);
                     foreach (string file in Directory.GetFiles(directory, searchPattern))
                     {
-                        SendMessage(file);
+                        SendMessage(file + Environment.NewLine);
                         FileInfo size = new FileInfo(file);
                         //если попавшийся файл - архив
                         if (size.Name.Contains(".zip"))
                         {
-                            count_scaning_file++;
+                            count_scaning_file += 1;
                             Signature.SearchArchive(file, tree);
 
                         }
                         if (size.Length < 200000000)
                         {
-                            count_scaning_file++;
 
                             Signature.find_sign_in_file(file, tree);
 
@@ -154,26 +167,23 @@ namespace PipeServer
 
                     foreach (string subDir in Directory.GetDirectories(directory))
                     {
-                        count_scaning_file++;
+                        SendMessage(Environment.NewLine);
                         FindFiles(subDir, searchPattern, tree, SendMessage);
 
                     }
                 }
                 else
                 {
-                    SendMessage("scan current file");
-                    SendMessage(directory);
+                    SendMessage("scan current file" + Environment.NewLine + directory + Environment.NewLine);
                     FileInfo size = new FileInfo(directory);
                     if (size.Name.Contains(".zip"))
                     {
-                        count_scaning_file++;
+                        count_scaning_file+=1;
                         Signature.SearchArchive(directory, tree);
 
                     }
                     if (size.Length < 200000000)
                     {
-                        count_scaning_file++;
-
                         Signature.find_sign_in_file(directory, tree);
 
                     }
@@ -186,24 +196,40 @@ namespace PipeServer
             {
                 // если нет доступа к директории, то пропустить ее
             }
+            numScanFiles += count_scaning_file;
+            VirusCount = virusFiles.Count;
             System.Console.WriteLine("Количество просканированных файлов: " + count_scaning_file);
         }
 
 
         //карантин
-        private static void MoveToQuarantine(string filePath)
+        public static void MoveToQuarantine(string filePath)
         {
-            string quarantinePath = @"C:\Users\Lenovo\Desktop\Quarantine\" + Path.GetFileName(filePath);
-            if (File.Exists(quarantinePath))
+            try
             {
-                // Если файл с таким именем уже есть в карантине, переименовываем его
-                quarantinePath = @"C:\Users\Lenovo\Desktop\Quarantine\" + Guid.NewGuid().ToString() + Path.GetExtension(filePath);
+                if (!Directory.Exists(QuarantinePath))
+                {
+                    Directory.CreateDirectory(QuarantinePath);
+                    Console.WriteLine("Папка успешно создана.");
+                }
+                string quarantinePath = Path.Combine(QuarantinePath, Path.GetFileName(filePath));
+                if (File.Exists(quarantinePath))
+                {
+                    // Если файл с таким именем уже есть в карантине, переименовываем его
+                    quarantinePath = Path.Combine(QuarantinePath, Guid.NewGuid().ToString() + Path.GetExtension(filePath));
+                }
+                byte[] crypt_file = File.ReadAllBytes(filePath);
+                crypt_file = Crypt(crypt_file);
+                //string crypt_file_name = GetNewFileName(filePath);
+                File.WriteAllBytes(filePath, crypt_file);
+                File.Move(filePath, quarantinePath);
             }
-            byte[] crypt_file = File.ReadAllBytes(filePath);
-            crypt_file = Crypt(crypt_file);
-            //string crypt_file_name = GetNewFileName(filePath);
-            File.WriteAllBytes(filePath, crypt_file);
-            File.Move(filePath, quarantinePath);
+
+            catch
+            {
+
+            }
+            
 
         }
 
@@ -215,10 +241,50 @@ namespace PipeServer
             return bytes;
         }
         //меняет имя зашифрованного файла на /файл/.crypt
-        private static string GetNewFileName(string FileName)
+        public static void Recover(string recoverFile)
         {
-            return FileName.EndsWith(".crypt") ? FileName.Remove(FileName.LastIndexOf(".crypt")) : FileName + ".crypt";
+            /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                      ПРИ ПРОВЕРКЕ ПОМЕНЯЙТЕ ПУТИ
+             !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+            //если папки с восстановленными файлами нет, создаем ее
+            string quarantinePath = Path.Combine(QuarantinePath, Path.GetFileName(recoverFile));
+            string recoverPath = RecoverPath;
+            //string recover = @"C:\Users\Lenovo\Desktop\Quarantine\" 
+            try
+            {
+                if (!Directory.Exists(recoverPath))
+                {
+                    Directory.CreateDirectory(recoverPath);
+                    Console.WriteLine("Папка успешно создана.");
+                }
+                else
+                {
+                    Console.WriteLine("Папка уже существует");
+                }
+
+                string recoverFilePath = Path.Combine(RecoverPath, Path.GetFileName(recoverFile));
+                if (File.Exists(recoverPath))
+                {
+                    // Если файл с таким именем уже есть в папке, переименовываем его
+                    recoverFilePath = Path.Combine(RecoverPath, Guid.NewGuid().ToString() + Path.GetExtension(recoverFile));
+                }
+
+                byte[] decrypt_file = File.ReadAllBytes(quarantinePath);
+                decrypt_file = Crypt(decrypt_file);
+
+                File.WriteAllBytes(quarantinePath, decrypt_file);
+                File.Move(quarantinePath, recoverFilePath);
+            }
+
+            catch
+            {
+
+            }
+            
+
         }
+
 
     }
 }

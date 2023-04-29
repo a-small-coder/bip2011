@@ -1,0 +1,10 @@
+C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe.config
+C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.exe
+C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\bin\Debug\AntivirusService.pdb
+C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\obj\Debug\AntivirusService.csproj.AssemblyReference.cache
+C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\obj\Debug\AntivirusService.csproj.SuggestedBindingRedirects.cache
+C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\obj\Debug\AntivirusService.ProjectInstaller.resources
+C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\obj\Debug\AntivirusService.csproj.GenerateResource.cache
+C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\obj\Debug\AntivirusService.csproj.CoreCompileInputs.cache
+C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\obj\Debug\AntivirusService.exe
+C:\Users\hulkt\OneDrive\Документы\antivirus\AntivirusService\AntivirusService\obj\Debug\AntivirusService.pdb

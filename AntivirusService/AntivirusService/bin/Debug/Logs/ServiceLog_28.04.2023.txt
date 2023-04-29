@@ -1,0 +1,13 @@
+Service is started at 28.04.2023 19:15:52
+Service is recall at 28.04.2023 19:15:57
+Service is recall at 28.04.2023 19:16:02
+Service is recall at 28.04.2023 19:16:07
+Service is recall at 28.04.2023 19:16:12
+Service is recall at 28.04.2023 19:16:17
+Service is stopped at 28.04.2023 19:16:19
+Service is stopped at 28.04.2023 19:57:22
+Server is running.
+Service is stopped at 28.04.2023 20:07:20
+Server is running.
+Service is stopped at 28.04.2023 20:22:00
+Server is running.

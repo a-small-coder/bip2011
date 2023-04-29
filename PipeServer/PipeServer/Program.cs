@@ -18,11 +18,15 @@ namespace PipeServer
         static void Main()
         {
 
+            Server pipeServer = new Server();
+            Watcher.SendMessage = pipeServer.SendMessage;
             Watcher.Start();
+            pipeServer.PipeName = "\\\\.\\pipe\\myNamedPipe";
+            pipeServer.Start();
             //departWatcher("start");
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            //Application.EnableVisualStyles();
+            //Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new Form1());
         }
 
         //public static void departWatcher(string action)

@@ -161,35 +161,31 @@ namespace PipeServer
                         tree = Signature.LoadSignatures(signature_file, tree);
                         string root_directory = path_command[0];// @"C:\Users\Lenovo\Desktop";
                         string search_pattern = "*.*";
+                        Signature.clearScanResults();
 
                         Signature.FindFiles(root_directory, search_pattern, tree, this.SendMessage);
-                        /*
-                        string[] search = Directory.GetFiles(path_command[0], "*.*", SearchOption.AllDirectories);
-                        foreach (string item in search)
+                        SendMessage("Scanning done" + Environment.NewLine);
+                        SendMessage("Count of scanning files: " + Signature.numScanFiles.ToString() + Environment.NewLine);
+                        SendMessage("Threats detected: " + Signature.VirusCount.ToString() + Environment.NewLine);
+                        if (Signature.VirusCount > 0)
                         {
-
-                            StreamReader stream = new StreamReader(item);
-                            string read = stream.ReadToEnd();
-                            string[] virus = new string[] { "VIRUSES", "INFECTED", "HACKED" };
-                            List<string> infected = new List<string>();
-
-                            foreach (string st in virus)
+                            SendMessage("Detected and eliminated threats below:" + Environment.NewLine);
+                            foreach (string element in Signature.virusFiles)
                             {
-                                if (Regex.IsMatch(read, st))
-                                {
-                                    viruses += 1;
-                                    infected.Add(item);
-
-
-                                }
+                                SendMessage(element + Environment.NewLine); // выводим каждый элемент на консоль
                             }
-                            Console.WriteLine(infected);
-                            stream.Close();
-                        }*/
+                        }
+                        break;
+                    case "move_to_qurantine":
+                        SendMessage("File moved to quarantine: " + Environment.NewLine + path_command[0] + Environment.NewLine);
+                        Signature.MoveToQuarantine(path_command[0]);
+                        break;
+                    case "recover_file":
+                        Signature.Recover(path_command[0]);
                         break;
                     case "stop_watcher":
                         Watcher.Stop();
-                        Console.WriteLine("Watcher killed from server");
+                        SendMessage("Watcher disabled");
                         break;
                     case "start_watcher":
                         Watcher.Run();
